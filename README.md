@@ -22,7 +22,7 @@
 
 
 * Model 4
-  * 
+  * .
 
 
 ## Summary
