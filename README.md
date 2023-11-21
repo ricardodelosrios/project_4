@@ -20,10 +20,12 @@
 ## Models
 * Neural Network
   * We trained a neural network model to learn from some data and make predictions to see if it gave the most optimized result or not.
-  * We trained it to a model with 2 hidden layer each wit 20 neurons which are the same number as the input variables.
+  * We trained it to a model with 2 hidden layers each with 20 neurons which are the same number as the input variables.
   * When the neurons were increased the accuracy decreased stating there is a chance of overfitting
-  * The final model is trained on 50 epochs but initially started with 30 epochs. The increasing number of epochs got the increase in accuracy. But when increased to 100 epochs the accuracy dropped
-  * The loss is a measure of how much error my model makes, and the accuracy is a measure of how many correct predictions my model makes. Our aim was to have a low loss and a high accuracy for the model. The accuracy is 0.84 which is high but when comparing with the other models is less
+  * The final model is trained on 50 epochs but initially started with 30 epochs.
+  * The increasing number of epochs got the increase in accuracy. But when increased to 100 epochs the accuracy dropped
+  * The loss is a measure of how much error my model makes, and the accuracy is a measure of how many correct predictions my model makes.
+  * Our aim was to have a low loss and a high accuracy for the model. The accuracy is 0.84 which is high but when comparing with the other models is less
   * However the neural network did not turn out an ideal model as the count of the data is less causing the model to over fit very easily.
 
 
