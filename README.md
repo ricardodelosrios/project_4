@@ -62,5 +62,6 @@
 
 
 ## Summary
+Overall, the random forest model best predicts the likelihood of heart disease.
 
 
