@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Heart Disease Monitor</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Heart Disease Monitor</span></h2>
+            <div class='description'>
+    			<p>The main objective is to develop an accurate and reliable predictive model that can anticipate the probability of a heart attack in patients, using medical data and relevant risk factors.</p>
+    		</div>
+    	</div>
+
+		
+		<!-- Result -->
+		<div class="results">
+			{% if prediction==1 %}
+				<h1>Prediction: <span class='Alert'>Alert ! you have a high probability of having heart disease.</span></h1>
+				
+			{% elif prediction==0 %}
+				<h1>Prediction: <span class='No_risk'>The probability of having heart disease is low</span></h1>
+									
+			{% endif %}
+		</div>
+
+		<div class="predictor-button-container"></div>
+			<a href="{{ url_for('home')}}" class="back-button">Back to Home</a>
+		</div>
+
+		<!-- Footer -->
+		<div class='footer'>
+			<div class="contact">
+			<a target="_blank" href="https://github.com/ricardodelosrios/project_4"><i
+				class="fab fa-github fa-lg contact-icon"></i></a>
+			</div>
+			<p class='footer-description'>This Machine Learning model does not replace professional medical diagnosis. Use it with caution and consult a healthcare professional for accurate medical assessments.</p>
+		</div>
+		
+		
+	</body>
+</html>

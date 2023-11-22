@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Monitor</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Website Title -->
+
+  <div class="container">
+    <h2 class='container-heading'><span class="heading_font">Heart Disease Monitor</span></h2>
+    <div class='description'>
+      <p>The main objective is to develop an accurate and reliable predictive model that can anticipate the probability of a heart attack in patients, using medical data and relevant risk factors.</p><br>
+        <p>(Note:The best model was the random forest with 87% accurate)</p>
+    </div>
+  </div>
+
+  <!-- Text Area -->
+  <div class="ml-container">
+    <form action="{{ url_for('predict')}}" method="POST", name="predictionForm"> 
+
+      
+        <label for="Age">Age</label>
+        <input type="text" id="Age" name="Age" placeholder="What is your age?"><br>
+
+
+
+        <label for="Sex">Sex</label>
+        <select id="Sex" name="Sex">
+          <option selected>----select option----</option>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select><br>
+
+
+
+        <label for="ChestPainType">Chest Pain Type</label>
+        <select id="ChestPainType" name="ChestPainType">
+          <option selected>----select option----</option>
+          <option value="ASY">ASY: Asymptomatic</option>
+          <option value="NAP">NAP: Non-Anginal Pain</option>
+          <option value="ATA">ATA: Atypical Angina</option>
+          <option value="TA">TA: Typical Angina</option>
+        </select><br>
+
+
+
+        <label for="RestingBP">Resting Blood Pressure</label>
+        <input type="text" id="RestingBP" name="RestingBP" placeholder="A number in range [80-200] mmHg"><br>
+
+
+
+        <label for="Cholesterol	">Cholesterol</label>
+        <input type="text" id="Cholesterol	" name="Cholesterol" placeholder="A number in range [0-603] mg/dl"><br>
+
+
+
+        <label for="FastingBS">Fasting Blood Sugar</label>
+        <select id="FastingBS" name="FastingBS">
+          <option selected>----select option----</option>
+          <option value="1">Greater than 120 mg/dl</option>
+          <option value="0">Less than 120 mg/dl</option>
+        </select><br>
+
+
+
+        <label for="RestingECG">Resting ECG Results</label>
+        <select id="RestingECG" name="RestingECG">
+          <option selected>----select option----</option>
+          <option value="Normal">Normal</option>
+          <option value="ST">Having ST-T wave abnormality</option>
+          <option value="LVH">Probable or definite left ventricular
+            hypertrophy</option>
+        </select><br>
+
+
+
+        <label for="MaxHR">Max Heart Rate </label>
+        <input type="text" id="MaxHR" name="MaxHR" placeholder="A number in range [60-202] bpm"><br>
+
+
+        <label for="ExerciseAngina">Exercise-induced Angina</label>
+        <select id="ExerciseAngina" name="ExerciseAngina">
+          <option selected>----select option----</option>
+          <option value="Y">Yes</option>
+          <option value="N">No</option>
+        </select><br>
+
+
+        <label for="Oldpeak">ST depression</label>
+        <input type="text" id="Oldpeak" name="Oldpeak" placeholder="ST depression, typically in [-2.6 To 6.2]"><br>
+
+
+
+        <label for="ST_Slope">slope of the peak exercise ST segment</label>
+        <select id="ST_Slope" name="ST_Slope">
+          <option selected>----select option----</option>
+          <option value="Up">Upsloping</option>
+          <option value="Flat">Flat</option>
+          <option value="Down">Downsloping</option>
+        </select><br>
+        
+        
+        <button type="submit", class="mainbutton" >Prediction</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <div class='footer'>
+    <div class="contact">
+      <a target="_blank" href="https://github.com/ricardodelosrios/project_4"><i
+          class="fab fa-github fa-lg contact-icon"></i></a>
+    </div>
+    <p class='footer-description'>This Machine Learning model does not replace professional medical diagnosis. Use it with caution and consult a healthcare professional for accurate medical assessments.</p>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

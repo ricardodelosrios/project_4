@@ -1,0 +1,191 @@
+* HTML  */
+html{
+	height: 100%;
+	margin: 0;
+}
+
+/* Body */
+
+body{
+	font-family: Arial, Helvetica,sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Website Title */
+ /* Main Container */
+.container{
+    padding: 35px;
+	position:relative;
+	background: linear-gradient(20deg, #008080, #008080);
+	background-size: 400% 400%;
+	
+}
+
+/* Container Heading */
+.container-heading{
+    margin: 0;
+}
+
+/* Heading Font */
+.heading_font{
+    color: #ffffff;
+	font-family: 'Corbert Condensed Italic';
+	font-size: 55px;
+	font-weight: normal;
+}
+
+/*Container Description*/
+.description p{
+	color: #ffffff;
+    font-style: italic;
+    font-size: 15px;
+    margin: -5px 0 0;
+}
+
+/* Text Area */
+.ml-container{
+    margin: 60px 0;
+	flex: 1 0 auto;
+
+}
+
+/*Form*/
+.form {
+	text-align: center;
+	width: 250px;
+	height: 25px;
+	margin-bottom: 5px;
+	
+}
+/* Input and Select */
+input[type=text], select {
+    width:60%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/*  */
+
+label {
+	display: inline block;
+	width: 200px;
+	font-weight: bold;
+	text-align: right;
+	float: left;
+		
+  }
+
+/* Predict Button */
+
+
+.mainbutton{
+	background: #008080;
+   	border: 2px solid #008080;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #8c8c8c;
+	margin-top: 10px;
+    padding: 10px 36px;
+    color: #ffffff;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+}
+
+/* Contact Icon */
+
+.mainbutton:hover{
+    color: #ffffff;
+    border: 2px solid #46424b;
+}
+
+/* back button */
+.back-button {
+	background: hsl(180, 100%, 25%);
+   	border: 2px solid #008080;
+    border-radius: 1000px;
+    box-shadow: 3px 3px #8c8c8c;
+	margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 36px;
+    color: #ffffff;
+    display: inline-block;
+   	font: italic bold 20px/1 "Calibri", sans-serif;
+    text-align: center;
+  }
+  
+  .back-button:hover {
+    color: #ffffff;
+    border: 2px solid #46424b;
+  }
+  
+  .back-button {
+   line-height: 1; 
+  }
+
+  .back-button {
+  box-sizing: border-box;
+  }
+  
+  .predictor-button-container{
+    margin: 10px 0;
+	flex: 1 0 auto;
+
+}
+/*  */
+
+.button:active{
+    box-shadow: 0 0;
+}
+
+/* Contact */
+
+.contact-icon{
+	color: #ffffff;
+	padding: 10px;
+}
+
+/*  */
+
+.contact-icon:hover{
+	color: #8c8c8c;
+}
+
+/* Footer */
+.footer{
+	flex-shrink: 0;
+	position:relative;
+	padding: 20px;
+	background: linear-gradient(20deg, #008080, #008080);
+	background-size: 500% 500%;
+	animation: change-gradient 10s ease-in-out infinite;
+}
+
+.footer-description{
+	color: #ffffff;
+	margin: 0;
+	font-size: 12px;
+}
+
+/* Result */
+.results{
+    padding: 30px 0 0;
+	flex: 1 0 auto;
+}
+
+.Alert{
+    color: #ff0000;
+}
+
+.No_risk{
+    color: green;
+}
