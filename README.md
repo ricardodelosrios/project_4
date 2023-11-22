@@ -32,20 +32,21 @@
 * Logistic Regression (Original)
   * The precision the ratio of true positives to all predicted positives, i.e., TP / (TP + FP).
   * The recall is the ratio of true positives to all actual positives, i.e., TP / (TP + FN).
-  * The table shows that the model has a higher precision (0.89) and f1-score for class 1 (0.86) than for class , which means that it is more accurate and balanced in predicting class 1 instances.
-  * However, the model has a higher recall for class 0(0.86) than for class 1(0.83), which means that it is more complete in finding class 0 instances.
+  * The table shows that the model has a higher precision (0.89) and f1-score for class 1 (0.86) than for class 0, which means that it is more accurate and balanced in predicting class 1 instances.
+  * However, the model has a higher recall for class 0 (0.86) than for class 1 (0.83), which means that it is more complete in finding class 0 instances.
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.84 which is the accuracy for this model.
 
 
 * Logistic Regression (Resampled)
   * The precision the ratio of true positives to all predicted positives, i.e., TP / (TP + FP).]
   * The recall is the ratio of true positives to all actual positives, i.e., TP / (TP + FN).
-  * The table shows that the model has a higher precision(0.92) and f1-score for class 1 (0.7) than for class 0(0.84), which means that it is more accurate and balanced in predicting class 1 instances.
-  * However, the model has a higher recall for class 0(0.90) than for class 1(0.83), which means that it is more complete in finding class 0 instances.
+  * The table shows that the model has a higher precision(0.92) and f1-score for class 1 (0.7) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
+  * However, the model has a higher recall for class 0 (0.90) than for class 1 (0.83), which means that it is more complete in finding class 0 instances.
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.86 which is the accuracy for this model.
   * The resampling increased the accuracy from the previous model
-  * Reason for using this method -It can improve the accuracy and generalization of machine learning models by reducing the effects of imbalanced class distribution, overfitting, and high variance
-  * It helps in creating new synthetic datasets for training machine learning models and to estimate the properties of a dataset when the dataset is unknown, difficult to estimate, or when the sample size of the dataset is small1.
+  * Reason for using this method:
+    * It can improve the accuracy and generalization of machine learning models by reducing the effects of imbalanced class distribution, overfitting, and high variance
+    * It helps in creating new synthetic datasets for training machine learning models and to estimate the properties of a dataset when the dataset is unknown, difficult to estimate, or when the sample size of the dataset is small1.
 
 
 * Random Forest
@@ -53,8 +54,8 @@
   * Random forest can handle high-dimensional data better, while logistic regression can suffer from overfitting and multicollinearity
   * Random forest works good on mixed data and very effective for categorical data
   * As a decision tree algorithm, Random Forests are less influenced by outliers than other algorithm
-  * The table shows that the model has a higher precision(0.89) and f1-score for class 1 (0.88) than for class 0(0.84), which means that it is more accurate and balanced in predicting class 1 instances.
-  * However, the model has a higher recall for class 1(0.87) than for class 1(0.86), which means that it is more complete in finding class 1 instances.
+  * The table shows that the model has a higher precision (0.89) and f1-score for class 1 (0.88) than for class 0(0.84), which means that it is more accurate and balanced in predicting class 1 instances.
+  * However, the model has a higher recall for class 1 (0.87) than for class 0 (0.86), which means that it is more complete in finding class 1 instances.
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.87 which is the accuracy for this model.
   * In general, if the precision, recall, and the F1 score are higher, it means that the model is performing better which is in this case
   * Based on the classification report, the model has a high precision and recall for both classes, which means that it can correctly identify most of the true positives and true negatives, and avoid false positives
