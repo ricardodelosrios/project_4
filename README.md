@@ -59,6 +59,7 @@
 
 
 ## Models
+
 ### Neural Network
 
 Construction and training of a neural network for heart diseases prediction.
