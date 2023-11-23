@@ -54,7 +54,7 @@
   * Random forest can handle high-dimensional data better, while logistic regression can suffer from overfitting and multicollinearity
   * Random forest works good on mixed data and very effective for categorical data
   * As a decision tree algorithm, Random Forests are less influenced by outliers than other algorithm
-  * The table shows that the model has a higher precision (0.89) and f1-score for class 1 (0.88) than for class 0(0.84), which means that it is more accurate and balanced in predicting class 1 instances.
+  * The table shows that the model has a higher precision (0.89) and f1-score for class 1 (0.88) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
   * However, the model has a higher recall for class 1 (0.87) than for class 0 (0.86), which means that it is more complete in finding class 1 instances.
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.87 which is the accuracy for this model.
   * In general, if the precision, recall, and the F1 score are higher, it means that the model is performing better which is in this case
