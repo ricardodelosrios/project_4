@@ -102,7 +102,7 @@ Implementation of oversampling using the RandomOverSampler to handle class imbal
 
   * The precision the ratio of true positives to all predicted positives, i.e., TP / (TP + FP).]
   * The recall is the ratio of true positives to all actual positives, i.e., TP / (TP + FN).
-  * The table shows that the model has a higher precision(0.92) and f1-score for class 1 (0.7) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
+  * The table shows that the model has a higher precision(0.92) and f1-score for class 1 (0.87) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
   * However, the model has a higher recall for class 0 (0.90) than for class 1 (0.83), which means that it is more complete in finding class 0 instances.
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.86 which is the accuracy for this model.
   * The resampling increased the accuracy from the previous model
