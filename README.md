@@ -62,6 +62,8 @@
 
 
 ## Summary
-Overall, the random forest model best predicts the likelihood of heart disease.
+  * Overall, the random forest model best predicts the likelihood of heart disease with an 87% average accuracy, recall, and f1 score.
+  * Also, a Flask app was created for users to input their statistics and have our random forest model predict their likelihood of heart disease.
+  * Visualizations are also presented.
 
 
