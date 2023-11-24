@@ -60,22 +60,6 @@
 
 ## Models
 
-### Neural Network
-
-Construction and training of a neural network for heart diseases prediction.
-
-`Training`: A neural network with two hidden layers and an output layer is defined and trained on the scaled training data.
-
-`Evaluation`: The trained neural network is evaluated on the scaled testing set, and loss and accuracy metrics are reported.
-
-  * We trained a neural network model to learn from some data and make predictions to see if it gave the most optimized result or not.
-  * We trained it to a model with 2 hidden layers each with 20 neurons which are the same number as the input variables.
-  * When the neurons were increased the accuracy decreased stating there is a chance of overfitting
-  * The final model is trained on 50 epochs but initially started with 30 epochs.
-  * The increasing number of epochs got the increase in accuracy. But when increased to 100 epochs the accuracy dropped
-  * The loss is a measure of how much error my model makes, and the accuracy is a measure of how many correct predictions my model makes.
-  * Our aim was to have a low loss and a high accuracy for the model. The accuracy is 0.84 which is high but when comparing with the other models is less
-  * However the neural network did not turn out an ideal model as the count of the data is less causing the model to over fit very easily.
 
 ### Logistic Regression (Original)
 
@@ -87,12 +71,12 @@ Construction of a logistic regression model to predict heart diseases and evalua
 
   * The precision the ratio of true positives to all predicted positives, i.e., TP / (TP + FP).
   * The recall is the ratio of true positives to all actual positives, i.e., TP / (TP + FN).
-  * The table shows that the model has a higher precision (0.89) and f1-score for class 1 (0.86) than for class 0, which means that it is more accurate and balanced in predicting class 1 instances.
+  * The table shows that the model has a higher precision (0.89) than for class 0 )0.79), which means that it is more accurate and balanced in predicting class 1 instances.
   * However, the model has a higher recall for class 0 (0.86) than for class 1 (0.83), which means that it is more complete in finding class 0 instances.
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.84 which is the accuracy for this model.
 
 
-### Logistic Regression (Resampled)
+### Logistic Regression (Resampled Data)
 
 Implementation of oversampling using the RandomOverSampler to handle class imbalance in the dataset. Another logistic regression model is trained on the oversampled data.
 
@@ -100,11 +84,10 @@ Implementation of oversampling using the RandomOverSampler to handle class imbal
 
 `Evaluation`: Model performance is evaluated on the testing set using a balanced accuracy score, a confusion matrix, and a classification report.
 
-  * The precision the ratio of true positives to all predicted positives, i.e., TP / (TP + FP).]
-  * The recall is the ratio of true positives to all actual positives, i.e., TP / (TP + FN).
-  * The table shows that the model has a higher precision(0.92) and f1-score for class 1 (0.87) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
+  
+  * The table shows that the model has a higher precision(0.92) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
   * However, the model has a higher recall for class 0 (0.90) than for class 1 (0.83), which means that it is more complete in finding class 0 instances.
-  * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.86 which is the accuracy for this model.
+  * The accuracy was increased for the model to 0.86
   * The resampling increased the accuracy from the previous model
   * Reason for using this method:
     * It can improve the accuracy and generalization of machine learning models by reducing the effects of imbalanced class distribution, overfitting, and high variance
@@ -123,11 +106,28 @@ Construction and evaluation of a random forest model to predict heart diseases.
   * Random forest can handle high-dimensional data better, while logistic regression can suffer from overfitting and multicollinearity
   * Random forest works good on mixed data and very effective for categorical data
   * As a decision tree algorithm, Random Forests are less influenced by outliers than other algorithm
-  * The table shows that the model has a higher precision (0.89) and f1-score for class 1 (0.88) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
+  * The table shows that the model has a higher precision  for class 1 (0.89) than for class 0 (0.84), which means that it is more accurate and balanced in predicting class 1 instances.
   * However, the model has a higher recall for class 1 (0.87) than for class 0 (0.86), which means that it is more complete in finding class 1 instances.
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.87 which is the accuracy for this model.
   * In general, if the precision, recall, and the F1 score are higher, it means that the model is performing better which is in this case
   * Based on the classification report, the model has a high precision and recall for both classes, which means that it can correctly identify most of the true positives and true negatives, and avoid false positives
+
+### Neural Network
+
+Construction and training of a neural network for heart diseases prediction.
+
+`Training`: A neural network with two hidden layers and an output layer is defined and trained on the scaled training data.
+
+`Evaluation`: The trained neural network is evaluated on the scaled testing set, and loss and accuracy metrics are reported.
+
+  * We trained a neural network model to learn from some data and make predictions to see if it gave the most optimized result or not.
+  * We trained it to a model with 2 hidden layers each with 20 neurons which are the same number as the input variables.
+  * When the neurons were increased the accuracy decreased stating there is a chance of overfitting
+  * The final model is trained on 50 epochs but initially started with 30 epochs.
+  * The increasing number of epochs got the increase in accuracy. But when increased to 100 epochs the accuracy dropped
+  * The loss is a measure of how much error my model makes, and the accuracy is a measure of how many correct predictions my model makes.
+  * Our aim was to have a low loss and a high accuracy for the model. The accuracy is 0.84 which is high but when comparing with the other models is less
+  * However the neural network did not turn out an ideal model as the count of the data is less causing the model to over fit very easily.
 
 ## Application best model (Random Forest)
 
