@@ -1,4 +1,4 @@
-# Group 3: Project 4 Report Template
+# Group 3: Project 4 🚀
 
 
 <div style="display: inline_block"><br/>
@@ -16,11 +16,16 @@
 
 
 
+
+https://github.com/ricardodelosrios/project_4/assets/133066908/3767bc18-c0d0-4d4d-a335-1603a2252f37
+
+
+
 ## Project Goal
 
 * The main objective is to develop an accurate and reliable predictive model that can anticipate the probability of a heart attack in patients, using medical data and relevant risk factors.
 
-## Libraries
+## Libraries 📚
 
 `Pandas`: Used for efficient manipulation and analysis of tabular data. It allows loading the dataset from a CSV file, data manipulation, and exporting clean data.
 
@@ -45,23 +50,23 @@
 `Flask-CORS`: Necessary for handling Cross-Origin Resource Sharing, allowing the web application to make requests to the Flask API from a different domain.
 
   
-## Data Sources
+## Data Sources 📊
 * The data was sourced from Kaggle, where 5 different datasets were combined to make one comprehensive overview of heart diseases
 * There are 11 features present in this dataset
 * The final dataset before cleaning had a count of 918
 * After cleaning, the count became 917
 * Link to Data: https://archive.ics.uci.edu/ml/machine-learning-databases/heart-disease/ 
 
-## Data Cleaning
+## Data Cleaning 🧹
 * This dataset was relatively clean and comprehensive after checking its size, duplicates, and null values
 * However, there was one data point which did not make sense, where resting blood pressure was 0
 * This data point was taken out of the final dataset
 
 
-## Models
+## Models 🤖
 
 
-### Logistic Regression (Original)
+### Logistic Regression (Original) 📉
 
 Construction of a logistic regression model to predict heart diseases and evaluation of performance.
 
@@ -76,7 +81,7 @@ Construction of a logistic regression model to predict heart diseases and evalua
   * The average values indicate that the model has a good overall performance, with an average precision, recall and f1-score of 0.84 which is the accuracy for this model.
 
 
-### Logistic Regression (Resampled Data)
+### Logistic Regression (Resampled Data) 🔄
 
 Implementation of oversampling using the RandomOverSampler to handle class imbalance in the dataset. Another logistic regression model is trained on the oversampled data.
 
@@ -94,7 +99,7 @@ Implementation of oversampling using the RandomOverSampler to handle class imbal
     * It helps in creating new synthetic datasets for training machine learning models and to estimate the properties of a dataset when the dataset is unknown, difficult to estimate, or when the sample size of the dataset is small1.
 
 
-### Random Forest
+### Random Forest 🌲
 
 Construction and evaluation of a random forest model to predict heart diseases.
 
@@ -112,7 +117,7 @@ Construction and evaluation of a random forest model to predict heart diseases.
   * In general, if the precision, recall, and the F1 score are higher, it means that the model is performing better which is in this case
   * Based on the classification report, the model has a high precision and recall for both classes, which means that it can correctly identify most of the true positives and true negatives, and avoid false positives
 
-### Neural Network
+### Neural Network 🧠
 
 Construction and training of a neural network for heart diseases prediction.
 
@@ -129,32 +134,32 @@ Construction and training of a neural network for heart diseases prediction.
   * Our aim was to have a low loss and a high accuracy for the model. The accuracy is 0.84 which is high but when comparing with the other models is less
   * However the neural network did not turn out an ideal model as the count of the data is less causing the model to over fit very easily.
 
-## Application best model (Random Forest)
+## Application best model (Random Forest) 🌐
 
 We created a `Flask` web application that hosts a machine learning model trained to predict heart disease. The model, a Random Forest classifier, is loaded into the Flask application and exposed through API endpoints. Users can interact with the model by inputting various parameters related to heart health through a web interface.
 
-### Features
+### Features 🌟
 
 * `Home Route (/)`: Renders the home page of the web application.
 
 * `Predict Route (/predict)`: Accepts user inputs through a form, sends the data to the machine learning model, and displays the predicted result on the web page.
 
-## HTML
+## HTML 🖥️
 
-### Home page
+### Home page  🏠
 
 The web application has a home page displaying the title "Heart Disease Monitor" and a brief description of the project's objective. The main objective is to develop an accurate and reliable predictive model that anticipates the probability of a heart attack in patients using medical data and relevant risk factors. The project employs a machine learning model, specifically a Random Forest classifier, with an 87% accuracy rate.
 
 Users interact with the model through a form on the web page, where they input details such as age, sex, chest pain type, resting blood pressure, cholesterol level, fasting blood sugar, resting ECG results, max heart rate, exercise-induced angina, ST depression, and the slope of the peak exercise ST segment. Upon submitting the form, the model processes the input and returns a prediction.
 
-#### Features
+#### Features 🔮
 * `Prediction Form`: Allows users to input various medical parameters and risk factors to obtain a predictive result.
 
 * `Responsive Design`: The web application is designed to be accessible and user-friendly on various devices.
 
 * `Integration with Machine Learning`: Utilizes a pre-trained Random Forest classifier to provide accurate predictions.
 
-### Predict page
+### Predict page 🔮
 
 The web application has a page with results section that dynamically displays predictions. If the model predicts a high probability of heart disease, an alert is shown; otherwise, a message indicating a low probability is displayed. Users can navigate back to the home page using the "Back to Home" button.
 
@@ -166,7 +171,7 @@ The web application has a page with results section that dynamically displays pr
 
 `GitHub Link`: A link to the GitHub repository, providing users access to the project's source code and potentially additional information.
 
-## Javascript
+## Javascript 📜
 
 The JavaScript function is a crucial component of the web application that facilitates the prediction of heart disease probability based on user input. It collects data such as age, blood pressure, cholesterol level, and other relevant factors, validates the inputs within specific ranges, and sends the data to the backend server for prediction.
 
@@ -182,7 +187,7 @@ The predictions are made by a machine learning model on the server, and the resu
 
 * `Result Display`: Updates the web page with the prediction result obtained from the server.
 
-## CSS
+## CSS 🎨
 
 CSS style create a responsive and visually engaging web page. The styles cover various aspects, including the website title, main container, text area, form elements, buttons, contact icons, and the footer.
 
@@ -196,7 +201,7 @@ CSS style create a responsive and visually engaging web page. The styles cover v
 
 * `Footer Styles`: The footer has its own gradient background, and the contact icon is styled for visual appeal. The footer description is presented in a smaller font size for a balanced layout.
 
-## How Users Can Use It
+## How Users Can Use It 🚀
 
 * `Clone the Repository`: Download or clone the repository to your local environment.
 
@@ -210,7 +215,7 @@ CSS style create a responsive and visually engaging web page. The styles cover v
 
 
 
-## Summary
+## Summary 📊
   * Overall, the random forest model best predicts the likelihood of heart disease with an 87% average accuracy, recall, and f1 score.
   * Also, a Flask app was created for users to input their statistics and have our random forest model predict their likelihood of heart disease.
   * Visualizations are also presented.
